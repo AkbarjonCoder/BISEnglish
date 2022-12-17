@@ -1,0 +1,40 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="130dp"
+    android:layout_weight="3"
+    app:cardElevation="0dp"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_height="200dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            app:shapeAppearanceOverlay="@style/circle"
+            android:src="@drawable/book1"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ziyodullo"
+            android:maxLines="1"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:maxLength="15"
+            android:textSize="17sp"
+            android:textColor="@color/standart"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

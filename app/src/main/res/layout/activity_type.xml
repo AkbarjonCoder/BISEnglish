@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.TypeActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="200dp">
+
+            <TextView
+                android:id="@+id/book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Books"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textColor="@color/standart"
+                android:layout_margin="15dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recy1"
+                android:layout_width="match_parent"
+                android:padding="4dp"
+                android:layout_height="180dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="260dp"
+            android:layout_height="200dp">
+
+            <TextView
+                android:id="@+id/vocabulary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vocabulary"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textColor="@color/standart"
+                android:layout_margin="15dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recy2"
+                android:layout_width="match_parent"
+                android:padding="4dp"
+                android:layout_height="180dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="520dp"
+            android:layout_height="200dp">
+
+            <TextView
+                android:id="@+id/audio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Audio Podcasts"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textColor="@color/standart"
+                android:layout_margin="15dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recy3"
+                android:layout_width="match_parent"
+                android:padding="4dp"
+                android:layout_height="180dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

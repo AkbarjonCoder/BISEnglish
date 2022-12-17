@@ -6,13 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".fragment.HomeFragment">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textColor="@color/standart"
-        android:textSize="100sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:text="1" />
+        tools:listitem="@layout/item_layout"
+        android:layout_margin="4dp"/>
 
 </LinearLayout>

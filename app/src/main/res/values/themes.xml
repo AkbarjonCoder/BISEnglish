@@ -20,4 +20,11 @@
 
     </style>
 
+
+    <style name="circle2">
+
+        <item name="cornerSize">50%</item>
+
+    </style>
+
 </resources>

@@ -3,6 +3,7 @@ package com.example.bisenglish
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.RecyclerView
 import com.example.bisenglish.fragment.BISFragment
 import com.example.bisenglish.fragment.HomeFragment
 import com.example.bisenglish.fragment.MediaFragment
@@ -11,6 +12,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var recyclerView: RecyclerView
     private lateinit var bottomNav : BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {

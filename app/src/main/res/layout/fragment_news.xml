@@ -2,17 +2,18 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/news"
     android:layout_height="match_parent"
     tools:context=".fragment.NewsFragment">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textColor="@color/standart"
-        android:textSize="100sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:text="3" />
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/smm_layout"
+        android:layout_margin="4dp"/>
 
 </FrameLayout>
